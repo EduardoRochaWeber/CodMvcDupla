@@ -1,0 +1,50 @@
+﻿@model WebAppMvcDupla.Models.Caminhao
+
+@{
+    ViewBag.Title = "Detalhes - Caminhão";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Caminhao</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cilindradas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cilindradas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QtRodas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QtRodas)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Voltar para a Lista", "List")
+</p>
